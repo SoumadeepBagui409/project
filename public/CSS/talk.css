@@ -1,0 +1,48 @@
+.talk-background{
+    text-shadow: 1px 0px 10px rgb(83, 83, 83);
+    font-family: 'Source Code Pro', monospace,arial,sans-serif;
+    color: rgb(251, 255, 235);
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(109, 109, 133, 0.8)),url('https://images.unsplash.com/photo-1497366811353-6870744d04b2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGludml0YXRpb24lMjBjb25mZXJlbmNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60');
+    padding: 30px;
+    height: 400px;
+    letter-spacing: 0.02rem;
+    background-size: cover;
+    background-position: center;
+    text-shadow: 1px 0px 1px black;
+}
+
+.talk-nav{
+    text-align: center;
+    padding:40px;
+    background-color: black;
+    color: snow;
+    letter-spacing: 0.3rem;
+}
+.talk-overview{
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(109, 109, 133, 0.8)),url('https://images.unsplash.com/photo-1497366811353-6870744d04b2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGludml0YXRpb24lMjBjb25mZXJlbmNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color:white;
+    font-family:'Source Code Pro', monospace,arial,sans-serif;
+    padding: 20px;
+}
+.talk-year{
+    margin: auto;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    border-radius: 20px 20px 0px 0px;
+    border-top: 2px solid white;
+   
+}
+
+.talk-info{
+    text-shadow: 1px 1px 1px black;
+    margin: 15px;
+    background-color: rgba(54, 37, 21, 0.575);
+    padding: 10px;  
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    background-image: linear-gradient(to bottom right,rgba(63, 22, 22, 0.19),rgba(94, 72, 72, 0.23));
+}
