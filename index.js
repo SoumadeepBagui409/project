@@ -39,4 +39,8 @@ app.get('/teaching',(req,res)=>{
 app.get('/talk',(req,res)=>{
     res.render("talk")
 })
-app.listen(3000);
+
+
+app.listen(process.env.PORT || 3000, ()=>{
+    console.log(`server running at ${process.env.PORT}`);
+});
