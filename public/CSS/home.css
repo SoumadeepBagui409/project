@@ -10,10 +10,14 @@ footer{
     font-weight: 600;
     text-shadow: 1px 0px 10px black;
 }
+a{
+    text-shadow: 1px 1px 1px black;
+}
 img{
     width:100%;
     height: 100%;
     border-radius: 10px;
+    margin: 12px;
 }
 .chk img{
     height: 250px;
@@ -29,16 +33,14 @@ img{
     font-family: 'Source Code Pro', monospace,arial,sans-serif;
     color: rgb(251, 255, 235);
     text-align: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(109, 109, 133, 0.8)),url('https://images.unsplash.com/photo-1464802686167-b939a6910659?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Z2FsYXh5fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60');
+    background: linear-gradient(rgba(117, 117, 117, 0.521),rgba(0, 0, 0, 0.452)),url('https://images.unsplash.com/photo-1571502297375-0fe3ea2d1d48?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fGxha2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60');
     padding: 30px;
-
+    text-shadow: 1px 1px 1px black;
     letter-spacing: 0.02rem;
     background-size: cover;
     background-position: center;
 }
-hr{
-    border: 5px solid black;
-}
+
 .addImg{
     background-size: cover;
     background-position: center;
@@ -46,7 +48,7 @@ hr{
 .title{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
-    text-shadow: 1px 0px 10px rgb(83, 83, 83);
+    text-shadow: 1px 0px 1px rgb(0, 0, 0);
     color: lightgrey;
     letter-spacing: 0.2rem;
 }
