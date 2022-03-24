@@ -22,7 +22,8 @@
 }
 
 .add-student{
-    background: linear-gradient(rgba(59, 59, 59, 0.8), rgba(109, 109, 133, 0.8)),url('https://images.unsplash.com/32/Mc8kW4x9Q3aRR3RkP5Im_IMG_4417.jpg?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Ym9hcmR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60');
+    text-shadow: 1px 0px 1px black;
+    background: linear-gradient(rgba(78, 78, 78, 0.733), rgba(71, 71, 71, 0.616)),url('https://images.unsplash.com/32/Mc8kW4x9Q3aRR3RkP5Im_IMG_4417.jpg?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Ym9hcmR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60');
     background-size: cover;
     background-position: center;
 }
