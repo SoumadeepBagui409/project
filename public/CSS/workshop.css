@@ -1,10 +1,10 @@
 .workshop-Back{
-    text-shadow: 1px 0px 10px rgb(83, 83, 83);
+    text-shadow: 1px 0px 1px black;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 900;
     color: rgb(251, 255, 235);
     text-align: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(84, 84, 95, 0.8)),url('https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjl8fHdvcmtzaG9wJTIwbGVjdHVyZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60');
+    background: linear-gradient(rgba(0, 0, 0, 0.623), rgba(85, 85, 87, 0.596)),url('https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjl8fHdvcmtzaG9wJTIwbGVjdHVyZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60');
     padding: 30px;
     height: 400px;
     letter-spacing: 0.02rem;
@@ -16,6 +16,7 @@
 
 
 .workshopTitle{
+    
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     background-color:rgb(20, 19, 19);
@@ -23,24 +24,12 @@
     font-weight: 900;
     color:snow;
     letter-spacing: 0.1rem;
-  
+
 }
-.workshopList:nth-child(1){
-    color: snow;
-    background-image: linear-gradient(to bottom right, rgba(92, 88, 88, 0.685),rgba(66, 65, 65, 0.719));
-    width: 80vw;
-    margin:auto;
-    text-shadow: 1px 0px 1px black;
-    font-weight: 500;
-    font-size: 20px;
-    padding: 30px;
-    font-family: 'Source Code Pro', monospace,arial,sans-serif;
-    border-radius: 20px;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-}
+ 
 .workshopList{
     color: snow;
-    background-image: linear-gradient(to bottom right, rgba(39, 38, 38, 0.685),rgba(41, 34, 34, 0.719));
+    background-image: linear-gradient(to bottom right, rgba(224, 160, 21, 0.411),rgba(255, 0, 0, 0.466));
     width: 90vw;
     margin:auto;
     margin-top: 20px;
