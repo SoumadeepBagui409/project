@@ -32,7 +32,7 @@ app.get('/',(req,res)=>{
 })
 
 app.get('/information',(req,res)=>{
-    res.render("info")
+    res.render("info");
 })
 
 app.get('/workshop',async(req,res)=>{
@@ -49,18 +49,33 @@ app.get('/research',(req,res)=>{
 })  
 
 app.get('/student',async(req,res)=>{
-    const guide = await guidance.find({});
+    try{
+        const guide = await guidance.find({});
     res.render("student",{guide:guide});
+    }catch(err){
+        res.send(err.message);
+    }
+    
 })
 
 app.get('/teaching',async(req,res)=>{
-    const Teaching = await Teach.find({});
-    res.render("teaching",{teaching:Teaching});
+    try{
+        const Teaching = await Teach.find({});
+        res.render("teaching",{teaching:Teaching});
+    }catch(err){
+        res.send(err.message);
+    }
+   
 })
 
 app.get('/talk',async(req,res)=>{
-    const talk = await Talk.find({});
-    res.render("talk",{talk,talk});
+    try{
+        const talk = await Talk.find({});
+        res.render("talk",{talk:talk});
+    }catch(err){
+        res.send(err.message);
+    }
+
 })
 
 
