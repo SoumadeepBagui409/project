@@ -1,9 +1,9 @@
 .talk-background{
-    text-shadow: 1px 0px 10px rgb(83, 83, 83);
+    text-shadow: 1px 0px 10px black;
     font-family: 'Source Code Pro', monospace,arial,sans-serif;
     color: rgb(251, 255, 235);
     text-align: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(109, 109, 133, 0.8)),url('https://images.unsplash.com/photo-1497366811353-6870744d04b2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGludml0YXRpb24lMjBjb25mZXJlbmNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60');
+    background: linear-gradient(rgba(0, 0, 0, 0.61), rgba(109, 109, 133, 0.603)),url('https://images.unsplash.com/photo-1497366811353-6870744d04b2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGludml0YXRpb24lMjBjb25mZXJlbmNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60');
     padding: 30px;
     height: 400px;
     letter-spacing: 0.02rem;
@@ -15,12 +15,12 @@
 .talk-nav{
     text-align: center;
     padding:40px;
-    background-color: black;
+    background-color: rgba(27, 27, 27, 0.959);
     color: snow;
     letter-spacing: 0.3rem;
 }
 .talk-overview{
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(109, 109, 133, 0.8)),url('https://images.unsplash.com/photo-1497366811353-6870744d04b2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGludml0YXRpb24lMjBjb25mZXJlbmNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60');
+    background: linear-gradient(rgba(0, 0, 0, 0.685),rgba(0, 0, 54, 0.623)),url('https://images.unsplash.com/photo-1446071103084-c257b5f70672?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTUzfHxiYWNrZ3JvdW5kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60');
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -31,18 +31,19 @@
 .talk-year{
     margin: auto;
     padding: 20px;
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    box-shadow: rgba(0, 0, 0, 0.308) 0px 10px 20px, rgba(0, 0, 0, 0.377) 0px 6px 6px;
     border-radius: 20px 20px 0px 0px;
     border-top: 2px solid white;
-   
+    background-image: linear-gradient(to bottom right,rgba(28, 158, 71, 0.315),rgba(174, 18, 179, 0.329));
 }
 
 .talk-info{
+   
     text-shadow: 1px 1px 1px black;
-    margin: 15px;
+    margin: 20px;
     background-color: rgba(54, 37, 21, 0.575);
-    padding: 10px;  
+    padding: 5px;  
     border-radius: 20px;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-    background-image: linear-gradient(to bottom right,rgba(63, 22, 22, 0.19),rgba(94, 72, 72, 0.23));
+    box-shadow: rgba(0, 0, 0, 0.911) 0px 22px 70px 4px;
+    background-image: linear-gradient(to bottom right,rgba(169, 17, 199, 0.342),rgba(87, 190, 3, 0.329));
 }

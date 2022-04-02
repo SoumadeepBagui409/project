@@ -7,49 +7,41 @@
         <br>
         <br>
         <br>
-        <h1>EXPERT TALKS, IVITTED TALKS</h1>
+        <h1>EXPERT TALKS, INVITED TALKS</h1>
          <h6>IN</h6>   
         <h1> SEMINARS & WORKSHOPS, FDP</h1>
     </div>
 
     <div class="talk-nav">
-        <h5>EXPERT TALKS, IVITTED TALKS IN  SEMINARS & WORKSHOPS, FDP</h5>
+        <h5>EXPERT TALKS, INVITED TALKS IN  SEMINARS & WORKSHOPS, FDP</h5>
     </div>
     <div class="talk-overview">
+        <br>
+        <%for(let talkInfo of talk){%>
         <div class="container-fluid talk-year">
-            <h3>Talk Year</h3>
+            <h3> Year <%=talkInfo.year%></h3>
             <hr>
-         
+            <%let idx = 1%>
+            <%for(let tvltalk of talkInfo.info){%>
                 <div class="talk-info">
-                    <h5>1</h5>
+                    <h5><%=idx%></h5>
                     <hr>
                     <p>Invited talk on</p>
-                    <p style="font-family:Arial, Helvetica, sans-serif; font-weight: 700;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem cumque nisi ad, corporis praesentium dicta necessitatibus hic, minima, repellendus aliquid quas ipsa sint ex? Hic in quam impedit illum tempore!
+                    <p style="font-family:Arial, Helvetica, sans-serif; font-weight: 700;">
+                        <%=tvltalk.title%>
                     </p>
-                    <p>at xyz place</p>
-                    <p>on xyz date</p>
+                    <%if(tvltalk.place.length>0)%>
+                    <p>at <%=tvltalk.place%> place</p>
+                    <%if(tvltalk.place.length>0)%>
+                    <p>on <%=tvltalk.date%> date</p>
                 </div>
-                <div class="talk-info">
-                    <h5>2</h5>
-                    <hr>
-                    <p>Invited talk on</p>
-                    <p style="font-family:Arial, Helvetica, sans-serif; font-weight: 700;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem cumque nisi ad, corporis praesentium dicta necessitatibus hic, minima, repellendus aliquid quas ipsa sint ex? Hic in quam impedit illum tempore!
-                    </p>
-                    <p>at xyz place</p>
-                    <p>on xyz date</p>
-                </div>
-                <div class="talk-info">
-                    <h5>3</h5>
-                    <hr>
-                    <p>Invited talk on</p>
-                    <p style="font-family:Arial, Helvetica, sans-serif; font-weight: 700;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem cumque nisi ad, corporis praesentium dicta necessitatibus hic, minima, repellendus aliquid quas ipsa sint ex? Hic in quam impedit illum tempore!
-                    </p>
-                    <p>at xyz place</p>
-                    <p>on xyz date</p>
-                </div>
-     
+                <%idx = idx + 1%>
+                <%}%>
+            </div>
+            <br>
+            <br>
+                <%}%>
 
-        </div>
-
-    </div>
+</div>
+    
 <%- include('./partials/footer'); -%>

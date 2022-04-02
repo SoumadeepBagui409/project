@@ -18,90 +18,25 @@
     </div>
 
     <div class="teaching-info">
+        <%for(let teach of teaching){%>
         <div class="semester-year">
-            <h1>Semester Year</h1>
+            <h1>Semester Year <%=teach.year%></h1>
+           
             <hr>
+            <%for(let inform of teach.info){%>
             <div class="semester-info">
-                <h4>Semester status -> On going/completed</h4>
-                <h4>semester -> Even/Odd</h4>
-                <h4>Course Code ->  xyz</h4>
-                <h4>Course Name -> xyz</h4>
-                <h4>Level -> XYZ</h4>
-                <h4>Course Overview <a href="#">link</a></h4>
+                <h4>Semester status -> <%=inform.status%></h4>
+                <h4>semester -> <%=inform.semester%></h4>
+                <h4>Course Code ->  <%=inform.courseCode%></h4>
+                <h4>Course Name -> <%=inform.courseName%></h4>
+                <h4>Level -> <%=inform.level%></h4>
+                <h4>Course Overview <a href="<%=inform.courseLink%>">link</a></h4>
             </div>
-            <div class="semester-info">
-                <h4>Semester status -> On going/completed</h4>
-                <h4>semester -> Even/Odd</h4>
-                <h4>Course Code ->  xyz</h4>
-                <h4>Course Name -> xyz</h4>
-                <h4>Level -> XYZ</h4>
-                <h4>Course Overview <a href="#">link</a></h4>
-            </div>
-            <div class="semester-info">
-                <h4>Semester status -> On going/completed</h4>
-                <h4>semester -> Even/Odd</h4>
-                <h4>Course Code ->  xyz</h4>
-                <h4>Course Name -> xyz</h4>
-                <h4>Level -> XYZ</h4>
-                <h4>Course Overview <a href="#">link</a></h4>
-            </div>
+            <%}%>
+            
         </div>
-        <div class="semester-year">
-            <h1>Semester Year</h1>
-            <hr>
-            <div class="semester-info">
-                <h4>Semester status -> On going/completed</h4>
-                <h4>semester -> Even/Odd</h4>
-                <h4>Course Code ->  xyz</h4>
-                <h4>Course Name -> xyz</h4>
-                <h4>Level -> XYZ</h4>
-                <h4>Course Overview <a href="#">link</a></h4>
-            </div>
-            <div class="semester-info">
-                <h4>Semester status -> On going/completed</h4>
-                <h4>semester -> Even/Odd</h4>
-                <h4>Course Code ->  xyz</h4>
-                <h4>Course Name -> xyz</h4>
-                <h4>Level -> XYZ</h4>
-                <h4>Course Overview <a href="#">link</a></h4>
-            </div>
-            <div class="semester-info">
-                <h4>Semester status -> On going/completed</h4>
-                <h4>semester -> Even/Odd</h4>
-                <h4>Course Code ->  xyz</h4>
-                <h4>Course Name -> xyz</h4>
-                <h4>Level -> XYZ</h4>
-                <h4>Course Overview <a href="#">link</a></h4>
-            </div>
-        </div>
-        <div class="semester-year">
-            <h1>Semester Year</h1>
-            <hr>
-            <div class="semester-info">
-                <h4>Semester status -> On going/completed</h4>
-                <h4>semester -> Even/Odd</h4>
-                <h4>Course Code ->  xyz</h4>
-                <h4>Course Name -> xyz</h4>
-                <h4>Level -> XYZ</h4>
-                <h4>Course Overview <a href="#">link</a></h4>
-            </div>
-            <div class="semester-info">
-                <h4>Semester status -> On going/completed</h4>
-                <h4>semester -> Even/Odd</h4>
-                <h4>Course Code ->  xyz</h4>
-                <h4>Course Name -> xyz</h4>
-                <h4>Level -> XYZ</h4>
-                <h4>Course Overview <a href="#">link</a></h4>
-            </div>
-            <div class="semester-info">
-                <h4>Semester status -> On going/completed</h4>
-                <h4>semester -> Even/Odd</h4>
-                <h4>Course Code ->  xyz</h4>
-                <h4>Course Name -> xyz</h4>
-                <h4>Level -> XYZ</h4>
-                <h4>Course Overview <a href="#">link</a></h4>
-            </div>
-        </div>
+        <%}%>
+        
     </div>
 
     
