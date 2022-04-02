@@ -7,15 +7,14 @@ const app = express();
 const public = path.join(__dirname,'public')
 const viewsPath = path.join(__dirname,'views')
 const mongoose = require('mongoose');
-const workshopSeed = require('./seedDB/SeedWorkshop');
-const guidanceSeed = require('./seedDB/Seedguidance');
-const teachSeed = require('./seedDB/SeedTeaching');
-const talkSeed = require('./seedDB/SeedTalk');
+// const workshopSeed = require('./seedDB/SeedWorkshop');
+// const guidanceSeed = require('./seedDB/Seedguidance');
+// const teachSeed = require('./seedDB/SeedTeaching');
+// const talkSeed = require('./seedDB/SeedTalk');
 const Workshop = require('./models/workshop.js');
 const guidance = require('./models/guidance.js');
 const Teach = require('./models/teaching.js');
 const Talk = require('./models/talk');
-const { findOneAndUpdate } = require('./models/guidance.js');
 // setup ejs templete and views location 
 app.set('view engine','ejs');
 app.set('views',viewsPath);
