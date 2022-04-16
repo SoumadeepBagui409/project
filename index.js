@@ -11,10 +11,14 @@ const mongoose = require('mongoose');
 // const guidanceSeed = require('./seedDB/Seedguidance');
 // const teachSeed = require('./seedDB/SeedTeaching');
 // const talkSeed = require('./seedDB/SeedTalk');
+//const researchSeed = require('./seedDB/reserchSeed');
+const LinkSeed = require('./seedDB/ResearchLink');
 const Workshop = require('./models/workshop.js');
 const guidance = require('./models/guidance.js');
 const Teach = require('./models/teaching.js');
 const Talk = require('./models/talk');
+const Research = require('./models/reserach');
+const ResearchLink = require('./models/reserachLink');
 // setup ejs templete and views location 
 app.set('view engine','ejs');
 app.set('views',viewsPath);
@@ -26,6 +30,8 @@ mongoose.connect(process.env.MONGODB_URL);
 //teachSeed();
 //workshopSeed();
 //guidanceSeed();
+//researchSeed();
+//LinkSeed();
 app.get('/',(req,res)=>{
     res.render("home");
 })
@@ -43,8 +49,15 @@ app.get('/workshop',async(req,res)=>{
     }
 })
 
-app.get('/research',(req,res)=>{
-    res.render("research");
+app.get('/research',async(req,res)=>{
+    try{
+        const research = await Research.find({});
+        const Link = await ResearchLink.find({});
+        res.render("research",{research:research,link:Link});
+    }catch(err){
+        res.send(err.message);
+    }
+    
 })  
 
 app.get('/student',async(req,res)=>{
