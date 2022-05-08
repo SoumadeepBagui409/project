@@ -72,7 +72,8 @@ app.get('/student',async(req,res)=>{
 
 app.get('/teaching',async(req,res)=>{
     try{
-        const Teaching = await Teach.find({});
+        let Teaching = await Teach.find({});
+        Teaching = Teaching.sort((a,b)=>{return b.year-a.year;});
         res.render("teaching",{teaching:Teaching});
     }catch(err){
         res.send(err.message);
