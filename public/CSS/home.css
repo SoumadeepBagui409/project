@@ -1,17 +1,6 @@
 body{
     height:100%;
 }
-footer{
-    text-align: center;
-    padding:30px;
-    background-color: rgb(66, 66, 66);
-}
-.footer-info{
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600;
-    text-shadow: 1px 0px 10px black;
-}
 a{
     text-shadow: 1px 1px 1px black;
 }

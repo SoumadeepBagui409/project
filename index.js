@@ -19,6 +19,7 @@ const Teach = require('./models/teaching.js');
 const Talk = require('./models/talk');
 const Research = require('./models/reserach');
 const ResearchLink = require('./models/reserachLink');
+const Course = require('./models/course');
 // setup ejs templete and views location 
 app.set('view engine','ejs');
 app.set('views',viewsPath);
@@ -79,6 +80,16 @@ app.get('/teaching',async(req,res)=>{
         res.send(err.message);
     }
    
+})
+
+app.get('/teaching/:courseId',async(req,res)=>{
+    try{
+        const {courseId} = req.params;
+        const course = await Course.find({});
+        res.render("courseTeach",{course:course}); 
+    }catch(err){
+        res.send(err.message);
+    }
 })
 
 app.get('/talk',async(req,res)=>{
