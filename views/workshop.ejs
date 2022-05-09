@@ -26,10 +26,12 @@
         <div class="workshopList">
             <h3 style="text-align: center;"><%=workshop.year%></h3>
                 <hr>
+                <ul>
             <%for(const desc of workshop.desc){%>
-                <p>-> <%=desc%></p>    
+                <li><%=desc%></li> 
+                <br>   
             <%}%>
-    
+        </ul>
         </div> 
         <%}%>
     
