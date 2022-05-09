@@ -43,7 +43,10 @@ app.get('/information',(req,res)=>{
 
 app.get('/workshop',async(req,res)=>{
     try{
-        const workshops = await Workshop.find({});
+        let workshops = await Workshop.find({});
+        workshop = workshop.sort((a,b)=>{
+            return b.year-a.year;
+        })
     res.render("workshop",{workshops:workshops});
     }catch(err){
         res.send(err);
