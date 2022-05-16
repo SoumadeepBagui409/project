@@ -1,0 +1,29 @@
+.opening-board{
+    font-family: 'Source Code Pro', monospace,arial,sans-serif;
+    background: linear-gradient(rgba(12, 11, 11, 0.651), rgba(24, 23, 23, 0.575)),url('https://images.unsplash.com/photo-1496715976403-7e36dc43f17b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGJhY2tncm91bmQlMjBpbnRlcmFjdGl2ZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    color: white;
+    text-align:center;
+    letter-spacing: 0.3rem;
+    height: 50vh;
+}
+.opening-nav{
+    font-family: 'Source Code Pro', monospace,arial,sans-serif;
+    text-align:center;
+    letter-spacing: 0.3rem;
+    padding: 20px;
+    color:white;
+    background-color: black;
+}
+
+.No-openings{
+    background: linear-gradient(rgba(12, 11, 11, 0.651), rgba(24, 23, 23, 0.575)),url('https://images.unsplash.com/photo-1602594732235-56b5d7e338c1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGVuZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=600');
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    color: rgb(255, 229, 167);
+    font-family: 'Source Code Pro', monospace,arial,sans-serif;
+    text-align: center;
+}

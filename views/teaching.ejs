@@ -23,8 +23,6 @@
             <h1>Semester Year <%=teach.year%></h1>
             <%const onGoing = teach.info.filter((ele)=>{return ele.status == "On Going"})%>
             <%const completed = teach.info.filter((ele)=>{return ele.status=="Completed"})%>
-            <!-- <%=onGoing%> 
-            <%=completed%> -->
             <hr>
             <%if(onGoing.length>0){%>
             <%for(let inform of onGoing){%>

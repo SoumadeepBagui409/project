@@ -29,7 +29,7 @@
  
 .workshopList{
     color: snow;
-    background-image: linear-gradient(to bottom right, rgba(212, 146, 3, 0.493),rgba(215, 2, 2, 0.575));
+    background-image: linear-gradient(to bottom right, rgba(212, 146, 3, 0.608),rgba(215, 2, 2, 0.679));
     width: 90vw;
     margin:auto;
     margin-top: 20px;
@@ -43,7 +43,7 @@
 }
 
 .backgroundWork{
-    background: linear-gradient(rgba(0, 0, 0, 0.795), rgba(21, 21, 22, 0.784)),url('https://images.unsplash.com/photo-1567566221756-5282476c4684?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjJ8fGZsb3dlcnN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60');
+    background: linear-gradient(rgba(0, 0, 0, 0.284), rgba(21, 21, 22, 0.207)),url('https://images.unsplash.com/photo-1536559692556-79e8be88e8ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDB8fGdhbGF4eXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60');
     background-size: cover;
     background-position: center;
     height: 100%;

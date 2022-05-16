@@ -104,7 +104,10 @@ app.get('/talk',async(req,res)=>{
     }
 
 })
-
+app.get('/Opening',async(req,res)=>{
+    let open =false;
+        res.render('opening',{open:open});
+})
 
 app.listen(process.env.PORT || 3000, ()=>{
     console.log(`server running at ${process.env.PORT}`);
